@@ -1,0 +1,114 @@
+.threats-page {
+  padding: 32px;
+  min-height: 100%;
+}
+
+.threats-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.threats-header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.threats-header p {
+  margin-top: 8px;
+  opacity: 0.6;
+}
+
+.threats-header button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.threat-filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filter {
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.filter.active {
+  background: #ffffff;
+  color: #000000;
+}
+
+.threats-card {
+  border: 1px solid #292929;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.threat-table-wrapper {
+  overflow-x: auto;
+}
+
+.threat-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.threat-table th,
+.threat-table td {
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #292929;
+  white-space: nowrap;
+}
+
+.threat-table th {
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+.threat-table td {
+  font-size: 14px;
+}
+
+.risk-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.risk-badge.critical {
+  background: rgba(255, 60, 60, 0.15);
+  color: #ff5555;
+}
+
+.risk-badge.high {
+  background: rgba(255, 150, 50, 0.15);
+  color: #ff9632;
+}
+
+.risk-badge.medium {
+  background: rgba(255, 210, 60, 0.15);
+  color: #ffd23c;
+}
+
+.risk-badge.low {
+  background: rgba(80, 200, 120, 0.15);
+  color: #50c878;
+}
+
+.empty-state {
+  padding: 60px;
+  text-align: center;
+  opacity: 0.6;
+}
